@@ -1,0 +1,21 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.devnet]
+# soonswap = "55iS9XXGfNx8REnsrr1ngJHTUmV8hFwvpTkukASFN5f7"
+# soonswap = "BsSL24RYWE4AtCBzDx9VpQKPQPj9bLjHdzj9ndYWJQQS"
+soonswap = "3tnTHHAgeh3KNxMgGyta2oAWEEnitHLGDWqkMghSwomn"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "https://api.devnet.solana.com"
+# cluster = "https://rpc.devnet.soo.network/rpc"
+wallet = "/home/muze/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
